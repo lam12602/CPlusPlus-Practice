@@ -12,15 +12,56 @@ int main()
     bool testBool = false;
     char testChar = 'K';
 
-    std::string testString = "Boy";
+    std::string lastName = "Mead";
+
+    std::string firstName = "Liam";
+
+    std::string fullName = firstName + " " + lastName;
+    
+    std::string Initials = fullName.substr(0, 1); 
+    std::size_t spacePos = fullName.find("");
+
+    Initials += fullName.substr(spacePos + 1, 1);
+
+    //std::string Paragraph = "Last year, you worked primarily with the C# programming language. This year, you will be working in C++. The names sound a bit similar, and that's for a reason - C# was built after C++ and shares much of the same syntax! However, they are still different languages and there are definitely some differences between them";
+    //std::string TwentyChar = Paragraph.substr(0, 20);
+    //std::string breaktext = TwentyChar + "\n";
+    //breaktext += Paragraph.substr(20, std::string::np)
 
     std::cout << "Hello World!" << std::endl;
-    std::cout << "F in the chat\n"
-        << testInt << std::endl
-        << testFloat << std::endl
-        << testBool << std::endl
-        << testChar << std::endl
-        << testString ;
+    std::cout << "F in the chat\n";
+       // << TwentyChar << std::endl;
+    //input
+    std::cout << "Please enter word.\n";
+    std::string entryString;
+    std::cin >> entryString;
+    std::cout << "You typed " << entryString << "!\n";
+
+    int entryInt;
+    std::cout << "Please enter whole number.\n";
+    std::cin >> entryInt;
+    std::cout << "You typed " << entryInt << "!\n";
+
+    float entryFloat;
+    std::cout << "Please enter decimal number.\n";
+    std::cin >> entryFloat;
+    std::cout << "You typed " << entryFloat << "!\n";
+
+    std::string lineoftext;
+    std::cout << "Please enter a line of text.\n";
+    std::getline(std::cin, lineoftext);
+    std::cout << "you typed " << lineoftext << "!\n";
+
+    bool decision = true;
+    if (descision == true)
+    {
+        std::cout << "was ture.\n";
+    }
+
+    else
+    {
+        std::cout << "was false.\n";
+    }
 
 
 
