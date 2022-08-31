@@ -63,6 +63,7 @@ int main()
         std::cout << "was false.\n";
     }
 
+    int ternResult = (decision ? 1 : 2);
 
 
 }
