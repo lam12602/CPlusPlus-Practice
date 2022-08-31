@@ -2,6 +2,8 @@
 //
 
 #include <iostream>
+#include <string>
+
 
 int main()
 {
@@ -10,12 +12,17 @@ int main()
     bool testBool = false;
     char testChar = 'K';
 
+    std::string testString = "Boy";
+
     std::cout << "Hello World!" << std::endl;
     std::cout << "F in the chat\n"
         << testInt << std::endl
         << testFloat << std::endl
         << testBool << std::endl
-        << testChar;
+        << testChar << std::endl
+        << testString ;
+
+
 
 }
 
