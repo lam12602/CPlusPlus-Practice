@@ -32,6 +32,45 @@ int main()
     std::cout << "F in the chat\n";
        // << TwentyChar << std::endl;
     //input
+    int length = 4;
+    int width = 6;
+
+    int area = length * width;
+    int perimiter = length * 2 + width * 2;
+
+    std::cout << "the area and perimiter are " << area << " and" << perimiter;
+
+    int hours = 4;
+    int minuets = hours * 60;
+    std::cout << "The time in hours and minuets is " << hours << "hours and in minuets it is " << minuets;
+    
+    std::cout << "please enter the day you were born.\n";
+    int day;
+    std::cin >> day;
+    std::cout << "please enter the month you were born.\n";
+    int month;
+    std::cin >> month;
+    std::cout << "please enter the year you were born.\n";
+    int year;
+    std::cin >> year;
+
+    std::cout << " you were born on " << day << "/" << month << "/" << year;
+
+    std::string insult = "absolute tool";
+    std::string start = "you are a ";
+    std::cout << start << insult;
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     std::cout << "Please enter word.\n";
     std::string entryString;
     std::cin >> entryString;
@@ -53,7 +92,7 @@ int main()
     std::cout << "you typed " << lineoftext << "!\n";
 
     bool decision = true;
-    if (descision == true)
+    if (decision == true)
     {
         std::cout << "was ture.\n";
     }
