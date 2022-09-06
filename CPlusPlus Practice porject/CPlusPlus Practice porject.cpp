@@ -7,6 +7,7 @@
 
 int main()
 {
+    /*
     int testInt = 9;
     float testFloat = 5.7f;
     bool testBool = false;
@@ -91,19 +92,86 @@ int main()
     std::getline(std::cin, lineoftext);
     std::cout << "you typed " << lineoftext << "!\n";
 
-    bool decision = true;
-    if (decision == true)
+    int direction;
+    std::cout << "Please enter a direction 1 - 4.\n";
+    std::cin >> direction;
+    if (direction == 1)
     {
-        std::cout << "was ture.\n";
+        std::cout << "passed a hospital .\n";
     }
 
+    else if (direction == 2)
+    {
+        std::cout << "passed graveyard.\n";
+    }
+
+    else if (direction == 3)
+    {
+        std::cout << "passed shop.\n";
+    }
+    else if (direction == 4)
+    {
+        std::cout << "you decided to just head home.\n";
+    }
     else
     {
-        std::cout << "was false.\n";
+        std::cout << "Direction not regognised.\n";
     }
 
-    int ternResult = (decision ? 1 : 2);
+    int errorcode = 2;
 
+    switch (errorcode)
+    {
+    case 0:
+    {
+        std::cout << "error was 0\n";
+
+
+        break;
+    }
+      
+    case 1:
+    {
+        std::cout << "error was 1\n";
+
+        break;
+    }
+
+    case 2:
+    {
+        std::cout << "error was 2\n";
+
+        break;
+
+    }
+
+    default:
+    {
+        std::cout << "error was not recognised \n";
+        break;
+    }
+        
+    }
+    */
+    bool whileb = true;
+
+    while (whileb == true)
+    {
+        whileb = false;
+    }
+
+    int doI = 0;
+    do {
+        ++doI;
+        std::cout << "do while ran " << doI << " times!\n";
+        
+    } while (doI<2);
+
+
+    for (int i = 0 ;i < 5 ; ++i)
+    {
+        std::cout << "for loop ran " << i << " times\n";
+    }
 
 }
 
