@@ -4,6 +4,11 @@
 #include <iostream>
 #include <string>
 
+void BasicFunction()
+{
+    std::cout << "Basic function ran";
+}
+
 
 int main()
 {
@@ -152,7 +157,7 @@ int main()
     }
         
     }
-    */
+    
     bool whileb = true;
 
     while (whileb == true)
@@ -166,12 +171,17 @@ int main()
         std::cout << "do while ran " << doI << " times!\n";
         
     } while (doI<2);
-
+    
+    std::string google = "go";
 
     for (int i = 0 ;i < 5 ; ++i)
     {
-        std::cout << "for loop ran " << i << " times\n";
+        google += 'o';
+        std::cout << google << "gle.\n";
     }
+    */
+
+BasicFunction();
 
 }
 
