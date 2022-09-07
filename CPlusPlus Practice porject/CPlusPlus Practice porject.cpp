@@ -6,7 +6,19 @@
 
 void BasicFunction()
 {
-    std::cout << "Basic function ran";
+    std::cout << "Basic function ran\n";
+}
+
+//void EarlyDeclare();
+void paramFunc(int paramInt)
+{
+    ++paramInt;
+    std::cout << "paramfunction ran - paramInt " << paramInt << "!\n";
+}
+
+int returnfunc()
+{
+    return 42;
 }
 
 
@@ -181,10 +193,26 @@ int main()
     }
     */
 
-BasicFunction();
+   /* BasicFunction();
 
+    EarlyDeclare();
+    int testint = 4;
+    paramFunc(testint);
+    std::cout << "testint = " << testint << "!\n";
+    int returnval = returnfunc();
+    std::cout << "returnval = " << returnval << "!\n";
+    */
+
+    int intArray[] = { 0, 1, 2 };
+
+    int intArrayb[3];
 }
+/*void EarlyDeclare()
+{
 
+    std::cout << "Basic early declair ran\n";
+}
+*/
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 
