@@ -3,6 +3,11 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
+#include <stdlib.h>
+#include <time.h>
+
+
 
 void BasicFunction()
 {
@@ -203,9 +208,64 @@ int main()
     std::cout << "returnval = " << returnval << "!\n";
     */
 
-    int intArray[] = { 0, 1, 2 };
+    /*int intArray[] = {0, 1, 2};
+    const int intArraySize = 3;
+    int intArrayB[intArraySize];
 
-    int intArrayb[3];
+    //declare vector
+    std::vector<int> intVector;
+
+    //add items to vector using push_back()
+
+    intVector.push_back(1);
+    intVector.push_back(2);
+    intVector.push_back(98);
+    intVector.push_back(7);
+    intVector.push_back(4);
+
+    std::cout << "Vector is " << intVector.size() << "\n";
+
+    std::cout << "Vector index 1 is " << intVector[1] << "\n";
+
+
+    //erase uses iterators
+    //an itrorater is like a marker for a particular point in vector
+    //erase first 2 elements
+    intVector.erase(intVector.begin(), intVector.begin() + 2);
+
+    int count = 0;
+    int arraysize = intVector.size();
+    for (arraysize; 0 < arraysize; ++arraysize)
+    {
+        std::cout << " vector current index is " << count << " and the number in the index is " << intVector[count] << "\n";
+        count = count + 1;
+    }
+    
+
+    //std::cout << "Vector is " << intVector.size() << "\n";
+
+    //std::cout << "Vector index 1 is " << intVector[1] << "\n";
+    */
+
+    int totalRandom = std::rand();
+    std::cout << "random number is " << totalRandom << "\n";
+
+    int seed = 100;
+    std::srand(time(NULL));
+    int lower = 50;
+    int upper = 150;
+    int range = lower - upper;
+    int seededRand = std::rand() % range + lower;
+    std::cout << "seeded rand is " << seededRand << "\n";
+    seededRand = std::rand();
+    std::cout << "seeded rand is " << seededRand << "\n";
+    seededRand = std::rand();
+    std::cout << "seeded rand is " << seededRand << "\n";
+    seededRand = std::rand();
+    std::cout << "seeded rand is " << seededRand << "\n";
+   
+
+
 }
 /*void EarlyDeclare()
 {
