@@ -247,7 +247,7 @@ int main()
     //std::cout << "Vector index 1 is " << intVector[1] << "\n";
     */
 
-    int totalRandom = std::rand();
+    /*int totalRandom = std::rand();
     std::cout << "random number is " << totalRandom << "\n";
 
     int seed = 100;
@@ -263,7 +263,9 @@ int main()
     std::cout << "seeded rand is " << seededRand << "\n";
     seededRand = std::rand();
     std::cout << "seeded rand is " << seededRand << "\n";
-   
+   */
+
+
 
 
 }
